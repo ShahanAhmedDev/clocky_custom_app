@@ -13,7 +13,16 @@ MenuInfo(MenuType.stopwatch,imageSource: 'assets/stopwatch_icon.png',title: 'Sto
 ];
 
 List<AlarmInfo> alarms = [
-  AlarmInfo('Shit', alarmDateTime: DateTime.now().add(Duration(hours: 1)),gradientColors: GradientColors.fire),
-  AlarmInfo('Shit-2', alarmDateTime: DateTime.now(),gradientColors: GradientColors.sea),
-  AlarmInfo('Shit-3', alarmDateTime: DateTime.now(),gradientColors: GradientColors.sky),
+  AlarmInfo(
+    id: 1,
+      alarmDateTime: DateTime.now().add(Duration(hours: 1)).toString(),
+      title: 'Office',
+      gradientColorIndex: 0, isPending: 'true',
+  ),
+  AlarmInfo(
+    id: 2,
+      alarmDateTime: DateTime.now().add(Duration(hours: 2)).toString(),
+      title: 'Sport',
+      gradientColorIndex: 1,
+  isPending: 'true'),
 ];
